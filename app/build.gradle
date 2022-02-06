@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    buildTypes {
+        debug {
+            debuggable System.getProperty('release') == null
+            jniDebuggable System.getProperty('release') == null
+        }
+
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        flavorDimensions "myjourney"
+
+        productFlavors {
+            MyJourney {
+            }
+
+            MyJourneyFree {
+                applicationId "com.lobo.myjourneyfree"
+                dimension "myjourney"
+                versionCode 1
+                versionName "1.0"
+            }
+        }
+
+        sourceSets {
+            MyJourney { res { srcDirs 'src/main/res' } }
+            MyJourneyFree { res { srcDirs 'src/MyJourneyFree/res' } }
+        }
+
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation supportDependencies.values()
+    implementation diDependencies.values()
+    implementation networkDependencies.values()
+
+    testImplementation testDependencies.junit,
+            testDependencies.mockk,
+            testDependencies.arch,
+            testDependencies.coroutines_test
+    androidTestImplementation testDependencies.mockk_android
+    androidTestImplementation testDependencies.test_core
+    androidTestImplementation testDependencies.kotlin_test
+    androidTestImplementation testDependencies.kotlin_test_junit
+    debugImplementation(testDependencies.fragment_testing) {
+        exclude group: "androidx.test", module: "core"
+    }
+}

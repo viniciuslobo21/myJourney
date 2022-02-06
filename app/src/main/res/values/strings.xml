@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">myjourney</string>
+    <string name="retry"><u>Retry</u></string>
+    <string name="ok"><u>OK</u></string>
+    <string name="day">Day %s</string>
+    <string name="generic_error">An error occurred, please try again later</string>
+</resources>

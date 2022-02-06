@@ -1,0 +1,79 @@
+ext {
+    application = [
+            versionCode  : 1,
+            versionName  : "1.0",
+            applicationId: "com.lobo.myjourney"
+    ]
+
+    versions = [
+            buildTools: "32.0.0",
+            minSdk    : 21,
+            targetSdk : 32,
+            compileSdk: 32,
+    ]
+
+    //SUPPORT
+    gradle_version = "7.0.2"
+    kotlin_version = "1.5.30"
+    material_version = "1.4.0"
+    core_version = "1.6.0"
+    app_compat_version = "1.3.1"
+    constraint_version = "2.1.1"
+    recycler_view_version = "1.2.1"
+    lifecycle_version = "2.3.1"
+    navigation_version = "2.3.5"
+    navigation_version = "2.3.5"
+    coroutines_version = "1.5.2"
+    lottie_version = "4.0.0"
+    gradle_plugin_version = '0.39.0'
+    swipe_refresh_layout = '1.1.0'
+
+    //TESTS
+    junit_version = "4.13.2"
+    mockk_version = "1.12.0"
+    coroutines_test_version = "1.5.2"
+    arch_version = '2.1.0'
+    test_core_version = '1.4.0'
+    fragment_version = "1.3.6"
+
+    //DI
+    koin_version = "3.1.2"
+
+    //NETWORK
+    gson_version = "2.8.8"
+
+    supportDependencies = [
+            material            : "com.google.android.material:material:$material_version",
+            core_ktx            : "androidx.core:core-ktx:$core_version",
+            app_compat          : "androidx.appcompat:appcompat:$app_compat_version",
+            recycler_view       : "androidx.recyclerview:recyclerview:$recycler_view_version",
+            constraint_layout   : "androidx.constraintlayout:constraintlayout:$constraint_version",
+            lifecycle_viewmodel : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+            lifecycle_livedata  : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+            navigation_fragment : "androidx.navigation:navigation-fragment-ktx:$navigation_version",
+            navigation          : "androidx.navigation:navigation-ui-ktx:$navigation_version",
+            swipe_refresh_layout: "androidx.swiperefreshlayout:swiperefreshlayout:$swipe_refresh_layout",
+            lottie              : "com.airbnb.android:lottie:$lottie_version"
+    ]
+
+    testDependencies = [
+            junit                : "junit:junit:$junit_version",
+            arch                 : "androidx.arch.core:core-testing:$arch_version",
+            test_core            : "androidx.test:core:$test_core_version",
+            fragment_testing     : "androidx.fragment:fragment-testing:$fragment_version",
+            mockk                : "io.mockk:mockk:$mockk_version",
+            mockk_android        : "io.mockk:mockk-android:$mockk_version",
+            coroutines_test      : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version",
+            kotlin_test          : "org.jetbrains.kotlin:kotlin-test:$kotlin_version",
+            kotlin_test_junit    : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    ]
+
+    diDependencies = [
+            koin     : "io.insert-koin:koin-android:$koin_version",
+            koin_core: "io.insert-koin:koin-core:$koin_version"
+    ]
+
+    networkDependencies = [
+            gson: "com.google.code.gson:gson:$gson_version"
+    ]
+}
