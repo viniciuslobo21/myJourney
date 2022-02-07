@@ -58,6 +58,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         binding.swipe.setOnRefreshListener {
             viewModel.dispatchViewAction(MainViewActions.Init)
         }
+
+        binding.errorContent.btnRetry.setOnClickListener {
+            viewModel.dispatchViewAction(MainViewActions.Init)
+        }
     }
 
     private fun loadItems(list: List<JourneyUiModel>) {
