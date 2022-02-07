@@ -5,7 +5,7 @@ import com.lobo.myjourney.common.utils.Converters.getJson
 import com.lobo.myjourney.common.utils.Result
 import com.lobo.myjourney.data.mappers.JourneyResponseToModelMapper
 import com.lobo.myjourney.data.model.JourneyResponse
-import com.lobo.myjourney.domain.JourneyModel
+import com.lobo.myjourney.domain.model.JourneyModel
 import com.lobo.myjourney.domain.model.JourneyErrorModel
 import kotlinx.coroutines.delay
 

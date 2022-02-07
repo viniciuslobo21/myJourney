@@ -2,7 +2,7 @@ package com.lobo.myjourney.data.mappers
 
 import com.lobo.myjourney.common.base.BaseMapper
 import com.lobo.myjourney.data.model.JourneyResponse
-import com.lobo.myjourney.domain.JourneyModel
+import com.lobo.myjourney.domain.model.JourneyModel
 
 
 class JourneyResponseToModelMapper : BaseMapper<JourneyResponse, JourneyModel> {

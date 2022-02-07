@@ -2,7 +2,7 @@ package com.lobo.myjourney.data.repository
 
 import com.lobo.myjourney.common.utils.Result
 import com.lobo.myjourney.data.datasource.LocalDataSource
-import com.lobo.myjourney.domain.JourneyModel
+import com.lobo.myjourney.domain.model.JourneyModel
 import com.lobo.myjourney.domain.model.JourneyErrorModel
 import com.lobo.myjourney.domain.repository.JourneyRepository
 

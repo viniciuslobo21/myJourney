@@ -4,7 +4,7 @@ import com.lobo.myjourney.R
 import com.lobo.myjourney.common.base.BaseMapper
 import com.lobo.myjourney.common.utils.NumbersToDescribedNumbers.convertNumberToWord
 import com.lobo.myjourney.common.utils.StringResourceProvider
-import com.lobo.myjourney.domain.JourneyModel
+import com.lobo.myjourney.domain.model.JourneyModel
 import com.lobo.myjourney.presentation.model.JourneyUiModel
 
 

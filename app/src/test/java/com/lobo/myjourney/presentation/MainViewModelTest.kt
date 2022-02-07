@@ -3,7 +3,7 @@ package com.lobo.myjourney.presentation
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.lobo.myjourney.common.utils.Result
 import com.lobo.myjourney.common.utils.StringResourceProvider
-import com.lobo.myjourney.domain.JourneyModel
+import com.lobo.myjourney.domain.model.JourneyModel
 import com.lobo.myjourney.domain.model.JourneyErrorModel
 import com.lobo.myjourney.domain.usecase.GetJourneyUseCase
 import com.lobo.myjourney.presentation.testCore.CoroutinesTestRule

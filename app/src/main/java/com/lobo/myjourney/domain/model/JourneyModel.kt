@@ -1,4 +1,4 @@
-package com.lobo.myjourney.domain
+package com.lobo.myjourney.domain.model
 
 class JourneyModel(
     val title: String,
